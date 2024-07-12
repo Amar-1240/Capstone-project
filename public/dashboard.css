@@ -1,0 +1,112 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Component */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #3498db; /* Navbar background color */
+    height: 80px; /* Set height of the navbar */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list:first-child {
+    margin-right: auto; /* Pushes the first list to the left */
+}
+
+.profile-list {
+    margin-left: auto; /* Pushes the profile list to the right */
+}
+
+.nav-list li {
+    margin-right: 15px; /* Adjust spacing between navbar items */
+}
+
+.nav-list li:last-child {
+    margin-right: 0; /* Remove margin for the last navbar item */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #ffffff; /* Navbar link text color */
+    font-size: 1.1em;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #2980b9; /* Hover background color */
+}
+
+/* Main Content */
+main {
+    margin-top: 80px; /* Adjust margin to accommodate fixed header */
+}
+
+main .container {
+    background-color: #ffffff; /* Main content background color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Sections styling */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #333333;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #f9f9f9; /* Footer background color */
+    color: #888888; /* Footer text color */
+}
+
+footer section {
+    padding-bottom: 20px;
+}
